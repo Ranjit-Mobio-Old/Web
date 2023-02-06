@@ -1,0 +1,126 @@
+/* body {
+    background: #00ff00;
+    background: #0f0;
+    background: rgba(255, 200, 150, 0.5);
+    color: royalblue;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+h3 {
+    color: #000;
+}
+
+body h3 {
+    color: #f00;
+}
+
+body>header>h3 {
+    background: #fff;
+}
+
+h1 {
+    float: left;
+} */
+
+/* ------------------------------- */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    margin: 0px;
+
+}
+
+body h4{
+    font-weight: 900;
+    color: red;
+    margin: 0;
+    margin: 20px 30px;
+}
+
+#main-header{
+    border: 1px solid black;
+    border: 1px dotted black;
+    border-top: none;
+    border-bottom: solid;
+    border-width: 4px;
+    border: 2px solid black;
+}
+ */
+/* -------- */
+
+/* h1,h3{
+    display: inline;
+    display: inline-block;
+    margin: 0px;
+    line-height: 20px;
+} */
+
+/* -------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@100&display=swap');
+
+body{
+    font-family: 'Roboto Mono', 'monospace';
+    font-weight: 900;
+    margin: 0px;
+
+}
+#site-title{
+    font-family: 'Press Start 2P', 'cursive';
+}
+
+header{
+    border: 2px solid black;
+}
+
+#top-stories {
+    
+    width: 1030px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+article{
+    max-width: 301px;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0px;
+}
+
+article img{
+    width: 100%;
+    height: 100px;
+    
+}
+
+.article-image{
+    height: 200px;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.more-link{
+    font-style: italic;
+}
+
+.bold-link{
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    text-decoration: overline;
+    text-decoration: line-through overline;
+}
+
+p{
+    letter-spacing: 5px;
+}
