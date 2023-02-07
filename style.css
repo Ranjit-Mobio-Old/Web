@@ -119,9 +119,17 @@ a{
     text-decoration: none;
     text-decoration: overline;
     text-decoration: line-through overline;
+    text-decoration-color:black ;
+    text-decoration-line: line-through;
+    text-decoration-style:dotted ;
 }
 
-p{
+/* p{
     letter-spacing: 5px;
     word-spacing: 2px;
+} */
+
+p{
+    text-indent: 20px;
+    text-align: center;
 }
