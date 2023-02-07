@@ -4,7 +4,6 @@
 body{
     font-family: 'Roboto Mono', 'monospace';
     font-weight: 900;
-    margin: 0px;
 
 }
 #site-title{
@@ -113,3 +112,14 @@ article:active{
     border-radius: 100%;
 }
 
+/* Positions */
+.main-header{
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255.0);
+    top: 0px;
+}
+body{
+    margin-top: 10px;
+}
