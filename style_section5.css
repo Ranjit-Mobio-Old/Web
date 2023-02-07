@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@100&display=swap');
 
-body{
+body {
     font-family: 'Roboto Mono', 'monospace';
     font-weight: 900;
 
 }
-#site-title{
+
+#site-title {
     font-family: 'Press Start 2P', 'cursive';
 }
 
-header{
+header {
     border: 2px solid black;
 }
 
 #top-stories {
-    
+
     width: 1030px;
     margin: auto;
     margin-top: 20px;
 }
 
-article{
+article {
     max-width: 301px;
     display: inline-block;
     border: 1px solid black;
@@ -29,34 +30,34 @@ article{
     margin: 0px;
 }
 
-article img{
+article img {
     width: 100%;
     height: 100px;
-    
+
 }
 
-.article-image{
+.article-image {
     height: 200px;
     width: 100%;
     background-size: cover !important;
     background-position: center !important;
 }
 
-.more-link{
+.more-link {
     font-style: italic;
 }
 
-.bold-link{
+.bold-link {
     font-weight: bolder;
 }
 
-a{
+a {
     text-decoration: none;
     text-decoration: overline;
     text-decoration: line-through overline;
-    text-decoration-color:black ;
+    text-decoration-color: black;
     text-decoration-line: line-through;
-    text-decoration-style:dotted ;
+    text-decoration-style: dotted;
 }
 
 /* p{
@@ -64,17 +65,18 @@ a{
     word-spacing: 2px;
 } */
 
-p{
+p {
     text-indent: 20px;
     text-align: center;
 }
 
-a:hover, a.more-link.bold-link:hover{
+a:hover,
+a.more-link.bold-link:hover {
     /* font-size: 55px; */
     color: greenyellow;
 }
 
-.my-input{
+.my-input {
     width: 90%;
     margin: 10px;
     display: block;
@@ -83,19 +85,19 @@ a:hover, a.more-link.bold-link:hover{
 }
 
 /* Psuedo-states */
-.my-input:focus{
+.my-input:focus {
     background: rgb(216, 194, 70);
     color: darkred;
     outline: none;
     border: 1px solid black;
 }
 
-article:active{
+article:active {
     opacity: 0.4;
 }
 
 /* Border radius */
-.my-input{
+.my-input {
     width: 90%;
     margin: 10px;
     display: block;
@@ -105,7 +107,7 @@ article:active{
     border: 1px solid transparent;
 }
 
-.article-image{
+.article-image {
     /* border-top-left-radius: 45px 90px; */
     height: 200px;
     width: 200px;
@@ -113,27 +115,28 @@ article:active{
 }
 
 /* Positions */
-.main-header{
-    position: absolute;
-    position: fixed;
+.main-header {
+    /* position: absolute;
+    position: fixed; */
     width: 100%;
     background: rgba(255, 255, 255.0);
     top: 0px;
 }
-body{
+
+body {
     margin-top: 10px;
 }
 
 /* Psuedo Elements */
-.main-header{
-    position: absolute;
-    position: fixed;
+.main-header {
+    /* position: absolute;
+    position: fixed; */
     width: 100%;
     background: rgba(255, 255, 255.0);
     top: 0px;
 }
 
-.main-header::before{
+.main-header::before {
     content: "";
     display: block;
     width: 30px;
@@ -144,3 +147,24 @@ body{
     left: 50px;
 }
 
+/* View Point Height and Width, Overflow Content */
+.main-header {
+    /* position: absolute;
+    position: fixed; */
+    width: 100%;
+    background: rgba(255, 255, 255.0);
+    top: 0px;
+    left: 0px;
+    width: 100vv;
+    width: 100%;
+    height: 50vh;
+
+}
+.my-text {
+    max-height: 200px;
+    /* overflow: hidden; */
+    border: 2px solid black;
+    /* overflow-y: hidden;
+    overflow: scroll; */
+    height: 400px;
+}
