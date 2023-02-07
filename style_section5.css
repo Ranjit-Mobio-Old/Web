@@ -28,6 +28,7 @@ article {
     border: 1px solid black;
     padding: 10px;
     margin: 0px;
+    box-shadow: 5px 5px 5px rgb(203, 26, 26);
 }
 
 article img {
@@ -167,4 +168,22 @@ body {
     /* overflow-y: hidden;
     overflow: scroll; */
     height: 400px;
+}
+
+/* Transition Property */
+article {
+    max-width: 301px;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0px;
+    box-shadow: 5px 5px 5px rgb(203, 26, 26);
+    transition: box-shadow 1s, background 3s;
+    transition-delay: 5s;
+}
+
+/* Transition Property */
+article:hover{
+    box-shadow: 15px 15px 15px rgb(174, 109, 109);
+    background: #584242;
 }
