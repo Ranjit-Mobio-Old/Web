@@ -31,6 +31,7 @@ console.log('My name is '+ myName)
 */
 
 // Boolean Operators
+/*
 var iLikeCheese = true
 undefined
 iLikeCheese = true
@@ -43,3 +44,24 @@ iLikeCheese == "false"
 false
 iLikeCheese =false
 false
+*/
+
+// Comparing Values
+true == true
+true
+"hi" == "hi"
+true
+"hi" == 3
+false
+var myNum = 6
+undefined
+myNum
+6
+var isPrimeUser = false
+undefined
+isPrimeUser != true
+true
+5 > 7
+false
+5 >= 5
+true
