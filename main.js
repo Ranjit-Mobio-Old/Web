@@ -30,7 +30,7 @@ console.log('My age last year will be '+ age--)
 console.log('My name is '+ myName)
 */
 
-// Comparing Values
+// Boolean Operators
 var iLikeCheese = true
 undefined
 iLikeCheese = true
