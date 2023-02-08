@@ -18,6 +18,7 @@ alert(welcome_message + ' ' +(age+exact_age))
 */
 
 // Undefined variables and modifying values of variables
+/*
 var age = 21
 var myName = "Ranjit"
 console.log('My age is' + ' '+ age)
@@ -27,3 +28,18 @@ console.log('My age next year will be '+ age++)
 age--
 console.log('My age last year will be '+ age--)
 console.log('My name is '+ myName)
+*/
+
+// Comparing Values
+var iLikeCheese = true
+undefined
+iLikeCheese = true
+true
+iLikeCheese = "true"
+'true'
+iLikeCheese == "true"
+true
+iLikeCheese == "false"
+false
+iLikeCheese =false
+false
