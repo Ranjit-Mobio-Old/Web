@@ -69,6 +69,7 @@ true
 */
 
 // If-Else Statement
+/*
 var isPrimeUser = false
 var isPrimeUser = true
 var isPrimeUser = "false"
@@ -85,3 +86,9 @@ var myAge = 21
  else if (myAge < 3) {console.log('You are a toodler')}
  else if (myAge <= 18) {console.log('You are a teenager')}
  else{console.log('Not in records');}
+*/
+
+// For Loop
+for (var i=0; i < 10; i++){
+    console.log('Current i ' + i);
+}
