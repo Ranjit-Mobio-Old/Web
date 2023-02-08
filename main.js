@@ -47,6 +47,7 @@ false
 */
 
 // Comparing Values
+/*
 true == true
 true
 "hi" == "hi"
@@ -65,3 +66,22 @@ true
 false
 5 >= 5
 true
+*/
+
+// If-Else Statement
+var isPrimeUser = false
+var isPrimeUser = true
+var isPrimeUser = "false"
+var isPrimeUser = false
+if (isPrimeUser == true) {
+    console.log('Thanks for being a loyal customer');
+}
+else {
+    console.log('Subscribe to premium!')
+}
+
+var myAge = 21
+ if (myAge < 1) {console.log('You are a baby')}
+ else if (myAge < 3) {console.log('You are a toodler')}
+ else if (myAge <= 18) {console.log('You are a teenager')}
+ else{console.log('Not in records');}
