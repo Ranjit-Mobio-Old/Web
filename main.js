@@ -89,6 +89,21 @@ var myAge = 21
 */
 
 // For Loop
+/*
 for (var i=0; i < 10; i++){
     console.log('Current i ' + i);
 }
+*/
+
+// function
+function myname () {
+    let name = "Ranjit";
+    console.log('My name is ' + name);
+}
+myname()
+
+function mydetail (name,age) {
+    console.log('Your name is ' + name + ' Your age is ' + age);
+}
+
+mydetail("Ranjit",21)
