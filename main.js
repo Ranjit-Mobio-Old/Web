@@ -96,6 +96,7 @@ for (var i=0; i < 10; i++){
 */
 
 // function
+/*
 function myname () {
     let name = "Ranjit";
     console.log('My name is ' + name);
@@ -107,3 +108,14 @@ function mydetail (name,age) {
 }
 
 mydetail("Ranjit",21)
+*/
+
+// Event Handling
+var btn = document.getElementById('go-button')
+function buttonClicked () {
+    console.log('Button Clicked!')
+    btn.removeEventListener('click',buttonClicked)
+
+}
+
+btn.addEventListener("click",buttonClicked)
