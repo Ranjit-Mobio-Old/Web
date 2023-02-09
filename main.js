@@ -111,11 +111,27 @@ mydetail("Ranjit",21)
 */
 
 // Event Handling
+/*
 var btn = document.getElementById('go-button')
 function buttonClicked () {
-    console.log('Button Clicked!')
-    btn.removeEventListener('click',buttonClicked)
+    console.log('Button Clicked!');
+    btn.removeEventListener('click',buttonClicked);
+    document.getElementById("text").innerHTML = "Don't do it!!";
+    console.log(document.getElementById("text")).innerHTML;
+}
 
+btn.addEventListener("click",buttonClicked)
+*/
+
+// innerHTML
+var btn = document.getElementById('go-button')
+function buttonClicked () {
+    console.log('Button Clicked!');
+    btn.removeEventListener('click',buttonClicked);
+    document.getElementById("text").innerHTML = "Don't do it!!";
+    let a = document.getElementById("text").innerHTML
+    // console.log(document.getElementById("text")).innerHTML;  //gives error
+    console.log(a)
 }
 
 btn.addEventListener("click",buttonClicked)
