@@ -243,7 +243,7 @@ console.log(thisLength)
 */
 
 //Flexible function parameters
-
+/*
 function getPhrase(params) {
     var l = 0
     // var l = phrase.length + another.length
@@ -265,3 +265,27 @@ var computed = getPhrase({ phrase: p1, another: p2 })
 var computed = getPhrase({ phrase: '', another: p2 })
 var computed = getPhrase({ another: p2 })
 console.log(computed)
+*/
+
+// Exercise
+/*
+var numbers = [42, 54, 601, 100, 45, 10, 50, 34]
+var words = ['Apple', 'pear', 'coconut', 'pizza', 'hamburger', 'banana']
+var sorted_words = words.sort()
+console.log(sorted_words)
+var sorted_num = numbers.sort(function (a, b) { return a - b })
+console.log(sorted_num)
+*/
+
+function missingNumber(num) {
+    var missing = -1
+    for (var i = 0; i <= num.length - 1; i++) {
+        if (num.indexOf(i) === -1) {
+            missing = i
+        }
+    }
+    return missing
+}
+var num = [3, 8, 7, 9, 6, 1, 10, 5, 4, 2, 19, 16, 18, 11, 10, 15, 13, 17, 20]
+console.log(missingNumber(num));
+
