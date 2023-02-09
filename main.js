@@ -139,6 +139,7 @@ btn.addEventListener("click",buttonClicked)
 */
 
 // Array
+/*
 var btn = document.getElementById('go-button')
 function buttonClicked() {
     console.log('Button Clicked!');
@@ -149,6 +150,7 @@ function buttonClicked() {
     // console.log(a)
 }
 btn.addEventListener("click", buttonClicked)
+*/
 
 // Array Part 1
 /*
@@ -172,6 +174,7 @@ hobbies.forEach(function(items,index){
 */
 
 // Array Part 3
+/*
 var hobbies = ["pizza", "reading", "programming", "music"]
 
 if(hobbies.indexOf('reading') >- 1){
@@ -181,5 +184,22 @@ if(hobbies.indexOf('reading') >- 1){
 if(hobbies.indexOf('sports') === -1) {
     console.log('not in array')
 }
+*/
+
+// Textarea and getting the values of input
+
+var btn = document.getElementById('go-button')
+function buttonClicked() {
+    console.log('Button Clicked!');
+    var customText = document.getElementsByClassName("myinput")
+    var results = document.getElementById("text");
+    var text_area = document.getElementsByClassName('my-textarea')
+    results.innerHTML = "Hello, " + customText[0].value + "<br>";
+
+    results.innerHTML += "Message: " + text_area[0].value
+
+
+}
+btn.addEventListener("click", buttonClicked)
 
 
