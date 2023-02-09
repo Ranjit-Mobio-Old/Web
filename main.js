@@ -124,14 +124,62 @@ btn.addEventListener("click",buttonClicked)
 */
 
 // innerHTML
+/*
 var btn = document.getElementById('go-button')
 function buttonClicked () {
     console.log('Button Clicked!');
     btn.removeEventListener('click',buttonClicked);
     document.getElementById("text").innerHTML = "Don't do it!!";
-    let a = document.getElementById("text").innerHTML
-    // console.log(document.getElementById("text")).innerHTML;  //gives error
-    console.log(a)
+    // let a = document.getElementById("text").innerHTML
+    console.log((document.getElementById("text")).innerHTML)  //gives error
+    // console.log(a)
 }
 
 btn.addEventListener("click",buttonClicked)
+*/
+
+// Array
+var btn = document.getElementById('go-button')
+function buttonClicked() {
+    console.log('Button Clicked!');
+    btn.removeEventListener('click', buttonClicked);
+    document.getElementById("text").innerHTML = "Don't do it!!";
+    // let a = document.getElementById("text").innerHTML
+    console.log((document.getElementById("text")).innerHTML)  //gives error
+    // console.log(a)
+}
+btn.addEventListener("click", buttonClicked)
+
+// Array Part 1
+/*
+var hobbies = ["pizza", "reading", "programming", "music"]
+// console.log('I no longer enjoying', hobbies.pop())
+hobbies.push('archary')
+*/
+
+//Array Part 2
+/*
+var hobbies = ["pizza", "reading", "programming", "music"]
+console.log(hobbies)
+hobbies.shift()
+console.log(hobbies)
+hobbies.unshift('playing')
+console.log(hobbies)
+hobbies.forEach(function(items,index){
+    console.log('I like ',items
+    ,index);
+})
+*/
+
+// Array Part 3
+var hobbies = ["pizza", "reading", "programming", "music"]
+
+if(hobbies.indexOf('reading') >- 1){
+    console.log('I like reading')
+}
+
+if(hobbies.indexOf('sports') === -1) {
+    console.log('not in array')
+}
+
+
