@@ -187,7 +187,7 @@ if(hobbies.indexOf('sports') === -1) {
 */
 
 // Textarea and getting the values of input
-
+/*
 var btn = document.getElementById('go-button')
 function buttonClicked() {
     console.log('Button Clicked!');
@@ -201,5 +201,67 @@ function buttonClicked() {
 
 }
 btn.addEventListener("click", buttonClicked)
+*/
+
+//Functions with parameters and return values
+/*
+function saysomething(phrase){
+    console.log('You said ', phrase)
+}
+
+function getPhraseLength(phrase){
+    var l = phrase.length
+    return l
+}
+var p = 'This is a phrase'
+saysomething(p)
+var thisLength = getPhraseLength('This is a longer sentance')
+console.log(thisLength)
+*/
+
+//Functions with multiple parameters 
+/*
+function saysomething(phrase){
+    console.log('You said ', phrase)
+}
+
+function getPhraseLength(phrase,another){
+    // var l = phrase.length + another.length
+    var l = phrase.length
+
+    if (typeof another !== "undefined") {
+        l += another.length;
+    }
+    
+
+    return l
+}
+var p1 = 'Longer sentence'
+var p2 = 'shorter sentence'
+var thisLength = getPhraseLength(p1)
+console.log(thisLength)
+*/
+
+//Flexible function parameters
+
+function getPhrase(params) {
+    var l = 0
+    // var l = phrase.length + another.length
+    if (typeof params.phrase !== "undefined") {
+        var l = params.phrase.length
+    }
+
+    if (typeof params.another !== "undefined") {
+        l += params.another.length;
+    }
 
 
+    return l
+}
+var p1 = 'Longer sentence'
+var p2 = 'shorter sentence'
+// var computed = getPhrase(another=p2)
+var computed = getPhrase({ phrase: p1, another: p2 })
+var computed = getPhrase({ phrase: '', another: p2 })
+var computed = getPhrase({ another: p2 })
+console.log(computed)
