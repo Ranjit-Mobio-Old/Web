@@ -277,6 +277,7 @@ var sorted_num = numbers.sort(function (a, b) { return a - b })
 console.log(sorted_num)
 */
 
+/*
 function missingNumber(num) {
     var missing = -1
     for (var i = 0; i <= num.length - 1; i++) {
@@ -288,4 +289,73 @@ function missingNumber(num) {
 }
 var num = [3, 8, 7, 9, 6, 1, 10, 5, 4, 2, 19, 16, 18, 11, 10, 15, 13, 17, 20]
 console.log(missingNumber(num));
+*/
 
+// Classes
+class Animal {
+    constructor(name, height, weight) {
+        console.log('created animal name ', name);
+        this.name = name
+        this.height = height
+        this.weight = weight
+
+    }
+    nameLength() {
+        return this.name.length
+    }
+
+}
+/*
+Animal.planet = "Earth"
+
+var dog = new Animal('Buzo',24,15)
+var fish = new Animal('Goldi',2,02)
+
+console.log(dog.nameLength())
+console.log(fish.nameLength())
+
+console.log(dog.constructor.planet)
+*/
+class Dog extends Animal {
+    constructor(name, height, weight, barkvolume, leashcolor, speed) {
+        super(name, height, weight)
+        this.barkvolume = barkvolume
+        this.leashcolor = leashcolor
+        this.speed = speed
+    }
+    bark() {
+        if (this.barkvolume > 50) {
+            console.log(this.name, ' barks loudly (Volume:', this.barkvolume, ')')
+        }
+        else {
+            console.log(this.name, ' barks timidely(Volume:', this.barkvolume, ')')
+        }
+    }
+}
+
+class Fish extends Animal {
+    constructor(name, height, weight, swimSpeed) {
+        super(name, height, weight)
+        this.swimSpeed = swimSpeed
+    }
+    swim(chasserSpeed) {
+        if (this.swimSpeed > 50) {
+            console.log(this.name, ' swims around quickly (Speed:', this.swimSpeed, ')')
+        }
+        else {
+            console.log(this.name, ' swims around slowly(Speed:', this.swimSpeed, ')')
+        }
+        if (this.swimSpeed > chasserSpeed) {
+            console.log(this.name, ' caught away!')
+        }
+        else (
+            console.log(this.name, ' was caught!')
+        )
+    }
+}
+
+var king = new Dog('King', 45, 92, 72, 'red', 52)
+king.bark()
+
+var Goldie = new Fish('Glodie', 2, 0.3, 43)
+Goldie.swim(king.speed)
